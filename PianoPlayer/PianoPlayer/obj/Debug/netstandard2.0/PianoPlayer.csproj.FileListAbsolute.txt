@@ -1,0 +1,5 @@
+C:\Users\atomi\Desktop\Comp Sci\Winter2020\C#\Piano\teamj\PianoPlayer\PianoPlayer\bin\Debug\netstandard2.0\PianoPlayer.deps.json
+C:\Users\atomi\Desktop\Comp Sci\Winter2020\C#\Piano\teamj\PianoPlayer\PianoPlayer\bin\Debug\netstandard2.0\PianoPlayer.dll
+C:\Users\atomi\Desktop\Comp Sci\Winter2020\C#\Piano\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.csprojAssemblyReference.cache
+C:\Users\atomi\Desktop\Comp Sci\Winter2020\C#\Piano\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.AssemblyInfoInputs.cache
+C:\Users\atomi\Desktop\Comp Sci\Winter2020\C#\Piano\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.AssemblyInfo.cs
