@@ -8,6 +8,7 @@ namespace PianoPlayer
 		//buffer length
 		public int Length { get { return buffer.Length; } }
 
+		//constructor creates array with a given param
 		public CircularArray(int ArrLength)
 		{
 			this.buffer = new double[ArrLength];
