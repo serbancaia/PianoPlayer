@@ -29,15 +29,19 @@ namespace PianoPlayer
 		{
 			if (keys.IndexOf(key) == -1)
 			{
-				Console.WriteLine("out of bounds, returns -1")
+				Console.WriteLine("out of bounds, returns -1");
 			}
-			
 		}
 
 		//goes through piano wires and returns sum of their sample
 		public double Play()
 		{ 
-			
+			double sum = 0;
+			foreach (int i in wireList)
+			{
+				sum += wireList.get(i);
+			}
+			return sum;
 		}
 	}
 	
