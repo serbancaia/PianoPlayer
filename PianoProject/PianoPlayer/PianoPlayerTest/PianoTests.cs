@@ -25,7 +25,7 @@ namespace PianoPlayerTest
             double[] array = { 1, 2, 3, 4, 5 };
             testArr.Fill(array);
             CollectionAssert.AreEqual(array, testArr.GetBuffer());
-            Assert.IsTrue();
+            Assert.IsTrue(testArr[4] == 5, "The index is not 5");
         }
     }
 }
