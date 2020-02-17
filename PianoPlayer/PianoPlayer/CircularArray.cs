@@ -22,6 +22,15 @@ namespace PianoPlayer
 		}
 
 		/// <summary>
+		/// Get method returning the class array.
+		/// </summary>
+		/// <returns>buffer</returns>
+		public double[] GetBuffer()
+		{
+			return this.buffer;
+		}
+
+		/// <summary>
         /// Indexer to go through elements in the buffer starting at the front to the value at the end
         /// </summary>
         /// <param name="index">index, where 0 indicates front of the ring buffer</param>
