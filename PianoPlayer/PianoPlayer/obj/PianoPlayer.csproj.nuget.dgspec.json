@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\atomi\\Desktop\\Comp Sci\\Winter2020\\C#\\Piano\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj": {}
+    "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\starboy_Assign1_folder\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\atomi\\Desktop\\Comp Sci\\Winter2020\\C#\\Piano\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj": {
+    "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\starboy_Assign1_folder\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\atomi\\Desktop\\Comp Sci\\Winter2020\\C#\\Piano\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj",
+        "projectUniqueName": "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\starboy_Assign1_folder\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj",
         "projectName": "PianoPlayer",
-        "projectPath": "C:\\Users\\atomi\\Desktop\\Comp Sci\\Winter2020\\C#\\Piano\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj",
-        "packagesPath": "C:\\Users\\atomi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\atomi\\Desktop\\Comp Sci\\Winter2020\\C#\\Piano\\teamj\\PianoPlayer\\PianoPlayer\\obj\\",
+        "projectPath": "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\starboy_Assign1_folder\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj",
+        "packagesPath": "C:\\Users\\c4i44\\.nuget\\packages\\",
+        "outputPath": "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\starboy_Assign1_folder\\teamj\\PianoPlayer\\PianoPlayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\atomi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\c4i44\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
