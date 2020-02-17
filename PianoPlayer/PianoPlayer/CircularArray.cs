@@ -8,7 +8,7 @@ namespace PianoPlayer
 		
 		/// <summary>
 		/// Defines a fixed size ring, or circular, buffer
-		/// </summary>
+		/// </summary>	
         /// <returns>Length of the buffer array</return>
 		public int Length { get { return buffer.Length; } }
 

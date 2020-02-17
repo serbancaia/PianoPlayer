@@ -1,14 +1,13 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PianoPlayer;
 
 namespace PianoTests
 {
     [TestClass]
-    public class AudioTest
+    public class PianoUnitTests
     {
         [TestMethod]
-        public void ConstructorTest()
+        public void TestMethod1()
         {
         }
     }
