@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace PianoPlayer
 {
 	public class Piano
@@ -25,7 +27,7 @@ namespace PianoPlayer
 		{	
 			foreach (char c in keys.ToCharArray())
 			{
-				wireList.Add(new PianoWire(Math.Pow(2, (keys.IndexOf(c) - 24) / 12) * 440), samplingRate);
+				wireList.Add(new PianoWire((int)(Math.Pow(2, (keys.IndexOf(c) - 24) / 12) * 440), samplingRate));
 			}
 		}
 
@@ -39,6 +41,10 @@ namespace PianoPlayer
 			{
 				Console.WriteLine("out of bounds, returns -1");
 			}
+			else
+			{
+				wireList[keys.IndexOf(key)].Strike();
+			}
 		}
 
 		/// <summary>
@@ -50,7 +56,7 @@ namespace PianoPlayer
 			double sum = 0;
 			foreach (var i in wireList)
 			{
-				sum =+ i.Sample(0.996);
+				sum += i.Sample(0.996);
 			}
 			return sum;
 		}
