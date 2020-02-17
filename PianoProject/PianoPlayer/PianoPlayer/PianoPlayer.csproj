@@ -54,7 +54,6 @@
     <Compile Include="KeyboardPiano.cs" />
     <Compile Include="Piano.cs" />
     <Compile Include="PianoWire.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
