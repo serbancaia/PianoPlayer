@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Audio.cs" />
     <Compile Include="CircularArray.cs" />
+    <Compile Include="PlayerPiano.cs" />
     <Compile Include="IMusicalInstrument.cs" />
     <Compile Include="IRingBuffer.cs" />
     <Compile Include="KeyboardPiano.cs" />
