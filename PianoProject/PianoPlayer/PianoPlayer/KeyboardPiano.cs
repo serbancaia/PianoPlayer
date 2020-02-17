@@ -11,7 +11,7 @@ namespace PianoPlayer
 {
     class KeyboardPiano
     {
-        static void Main(string[] args)
+       static void Main(string[] args)
         {
             KeyboardPiano p = new KeyboardPiano();
             p.Run();
