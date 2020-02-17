@@ -8,9 +8,9 @@ namespace PianoPlayer
 {
     class PlayerPiano
     {
-        public static void Main(String[] args)
-        { 
+        //public static void Main(String[] args)
+        //{ 
             
-        }
+        //}
     }
 }

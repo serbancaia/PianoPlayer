@@ -13,6 +13,18 @@ namespace PianoPlayer
 			this.samplingRate = samplingRate;
 			this.circularArray = new CircularArray(this.samplingRate / this.frequency);
 		}
+		public int getFrequency()
+		{
+			return this.frequency;
+		}
+		public int getSamplingRate()
+		{
+			return this.samplingRate;
+		}
+		public CircularArray getCircularArray()
+		{
+			return this.circularArray;
+		}
 		/// <summary>
 		/// This method adds a new value to the rear, which is the average of the two
 		/// first values multiplied by the decay factor. It removes the value  
@@ -38,7 +50,5 @@ namespace PianoPlayer
 			}
 			this.circularArray.Fill(buffer);
 		}
-
-		//Circular array missing in here
 	}
 }
