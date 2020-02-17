@@ -583,11 +583,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\another_assignment1_folder\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj",
+      "projectUniqueName": "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\how_assign1_folder\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj",
       "projectName": "PianoPlayer",
-      "projectPath": "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\another_assignment1_folder\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj",
+      "projectPath": "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\how_assign1_folder\\teamj\\PianoPlayer\\PianoPlayer\\PianoPlayer.csproj",
       "packagesPath": "C:\\Users\\c4i44\\.nuget\\packages\\",
-      "outputPath": "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\another_assignment1_folder\\teamj\\PianoPlayer\\PianoPlayer\\obj\\",
+      "outputPath": "D:\\Computer_Science\\Dawson\\Semester_4\\Net_with_C#_II\\how_assign1_folder\\teamj\\PianoPlayer\\PianoPlayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
