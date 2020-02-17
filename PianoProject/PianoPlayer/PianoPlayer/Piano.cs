@@ -7,7 +7,7 @@ namespace PianoPlayer
 	{
 		private string keys;
 		private int samplingRate;
-		private List<IMusicalInstrument> wireList;
+		private List<IMusicalInstrument> wireList = new List<IMusicalInstrument>();
 
 		/// <summary> 
         /// This constructor takes 2 params to create a Piano object
@@ -18,6 +18,7 @@ namespace PianoPlayer
 		{
 			this.keys = keys;
 			this.samplingRate = samplingRate;
+			CharacterKey();
 		}
 
 		/// <summary>
@@ -27,6 +28,7 @@ namespace PianoPlayer
 		{	
 			foreach (char c in keys.ToCharArray())
 			{
+				Console.WriteLine(c);
 				wireList.Add(new PianoWire((int)(Math.Pow(2, (keys.IndexOf(c) - 24) / 12) * 440), samplingRate));
 			}
 		}
@@ -43,6 +45,7 @@ namespace PianoPlayer
 			}
 			else
 			{
+				Console.Write(keys.IndexOf(key));
 				wireList[keys.IndexOf(key)].Strike();
 			}
 		}
