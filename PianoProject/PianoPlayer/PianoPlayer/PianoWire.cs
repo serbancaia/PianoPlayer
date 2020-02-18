@@ -13,14 +13,26 @@ namespace PianoPlayer
 			this.samplingRate = samplingRate;
 			this.circularArray = new CircularArray(this.samplingRate / this.frequency);
 		}
+		/// <summary>
+		/// This method returns the value of the frequency field.
+		/// </summary>
+		/// <returns>Value of the frequency</returns>
 		public int getFrequency()
 		{
 			return this.frequency;
 		}
+		/// <summary>
+		/// This method returns the value of the samplingRate field.
+		/// </summary>
+		/// <returns>Value of the sampling rate</returns>
 		public int getSamplingRate()
 		{
 			return this.samplingRate;
 		}
+		/// <summary>
+		/// This method returns the circularArray field.
+		/// </summary>
+		/// <returns>CircularArray object representing the buffer</returns>
 		public CircularArray getCircularArray()
 		{
 			return this.circularArray;
