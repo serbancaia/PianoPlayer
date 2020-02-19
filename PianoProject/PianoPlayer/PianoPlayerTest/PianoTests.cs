@@ -8,18 +8,13 @@ namespace PianoPlayerTest
     [TestClass]
     public class PianoTests
     {
-        /// <summary>
-        /// This method tests the CircularArray constructor.
-        /// </summary>
         [TestMethod]
         public void CircularConstTest()
         {
-            Assert.IsTrue(new CircularArray(3).Length == 3, "The constructor works" );
+            CircularArray newTestArray = new CircularArray(4);
+            Assert.IsTrue(newTestArray.Length == 4, "The constructor works");
         }
 
-        /// <summary>
-        /// This method tests the Fill method in the CircularArray class.
-        /// </summary>
         [TestMethod]
         public void FillTest()
         {
