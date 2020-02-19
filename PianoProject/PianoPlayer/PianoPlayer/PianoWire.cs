@@ -15,6 +15,30 @@ namespace PianoPlayer
 		}
 
 		/// <summary>
+		/// This method returns the value of the frequency field.
+		/// </summary>
+		/// <returns>Value of the frequency</returns>
+		public int getFrequency()
+		{
+			return this.frequency;
+		}
+		/// <summary>
+		/// This method returns the value of the samplingRate field.
+		/// </summary>
+		/// <returns>Value of the sampling rate</returns>
+		public int getSamplingRate()
+		{
+			return this.samplingRate;
+		}
+		/// <summary>
+		/// This method returns the circularArray field.
+		/// </summary>
+		/// <returns>CircularArray object representing the buffer</returns>
+		public CircularArray getCircularArray()
+		{
+			return this.circularArray;
+		}
+		/// <summary>
 		/// This method adds a new value to the rear, which is the average of the two
 		/// first values multiplied by the decay factor. It removes the value  
 		/// currently at the front, and  returns it.
@@ -44,7 +68,5 @@ namespace PianoPlayer
 			}
 			this.circularArray.Fill(buffer);
 		}
-
-		//Circular array missing in here
 	}
 }

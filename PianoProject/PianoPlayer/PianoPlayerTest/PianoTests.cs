@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PianoPlayer;
 
@@ -23,67 +24,72 @@ namespace PianoPlayerTest
             CollectionAssert.AreEqual(array, testArr.GetBuffer());
             Assert.IsTrue(testArr[4] == 5, "The index is not 5");
         }
-
         [TestMethod]
-        public void ShiftTest()
+        public void PianoWireGetFrequencyTest()
         {
-            CircularArray testArr = new CircularArray(5);
-
-            double firstElement = testArr.Shift(3);
-            Assert.IsTrue(testArr[4] == 3, "The index is not 3");
+            PianoWire pianoWire = new PianoWire(2, 6);
+            Assert.AreEqual(2, pianoWire.getFrequency(), "Expected result of 2 but value was different");
         }
-
         [TestMethod]
-        public void PianoConstructorTest()
+        public void PianoWireGetSamplingRateTest()
         {
-            Piano testObject = new Piano("q2we4r5ty7u8i9op-[=zxdcfvgbnjmk,.;/' ", 44100);
-            Assert.IsNotNull(testObject, "The piano object is null");
+            PianoWire pianoWire = new PianoWire(2, 6);
+            Assert.AreEqual(6, pianoWire.getSamplingRate(), "Expected result of 6 but value was different");
         }
-
         [TestMethod]
-        public void StrikeKeyTest()
+        public void PianoWireGetCircularArrayTest()
         {
-            string keys = "q2we4r5ty7u8i9op-[=zxdcfvgbnjmk,.;/' ";
-            Boolean boolCheck = true;
-            Piano testObject = new Piano("q", 44100);
-            foreach (char c in keys)
+            PianoWire pianoWire = new PianoWire(2, 6);
+            Assert.AreNotEqual(null, pianoWire.getCircularArray(), "Expecting not null value but value was different");
+        }
+        [TestMethod]
+        public void PianoWireConstructorTest()
+        {
+            PianoWire pianoWire = new PianoWire(2, 6);
+            Assert.AreNotEqual(null, pianoWire.getFrequency(), "Expecting not null value but value was different");
+            Assert.AreNotEqual(null, pianoWire.getSamplingRate(), "Expecting not null value but value was different");
+            Assert.AreEqual(3, pianoWire.getCircularArray().Length, "Expected result of 3 but value was different");
+        }
+        [TestMethod]
+        public void PianoWireStrikeTest()
+        {
+            PianoWire pianoWire = new PianoWire(2, 6);
+            pianoWire.Strike();
+            Assert.AreNotEqual(null, pianoWire.getCircularArray()[0], "Expecting not null value but value was different");
+        }
+        [TestMethod]
+        public void PianoWireSampleTest()
+        {
+            PianoWire pianoWire = new PianoWire(2, 6);
+            double[] buffer = { 0.2, 0.3, 0.1 };
+            pianoWire.getCircularArray().Fill(buffer);
+            Assert.AreEqual(buffer[0], pianoWire.Sample(0.996), "Expecting result of 0.2 but value was different");
+            Assert.AreEqual(0.249, pianoWire.getCircularArray()[2], "Expecting result of 0.249 but value was different");
+        }
+        [TestMethod]
+        public void PlayerPianoMainTest()
+        {
+            String[] chopsticksLines = File.ReadAllLines("D:/Computer_Science/Dawson/Semester_4/Net_with_C#_II/great_assign1_folder/teamj/PianoProject/PianoPlayer/PianoPlayer/chopsticks.txt");
+            Piano myPiano = new Piano(chopsticksLines[0], 44100);
+            foreach (String line in chopsticksLines)
             {
-                int check = (int)(Math.Pow(2, (keys.IndexOf(c) - 24) / 12) * 440);
-
-                if (keys.IndexOf(c) == -1)
+                if (line != chopsticksLines[0])
                 {
-                    boolCheck = false;
+                    Char[] lineLetters = line.ToCharArray();
+                    Assert.AreNotEqual(null, lineLetters, "Expecting not null value but value was different");
+                    Assert.AreNotEqual(null, lineLetters[0], "Expecting not null value but value was different");
+                    foreach (Char letter in lineLetters)
+                    {
+                        myPiano.StrikeKey(letter);
+                        Assert.AreNotEqual(null, letter, "Expecting not null value but value was different");
+                    }
+                    Assert.AreNotEqual(null, line, "Expecting not null value but value was different");
                 }
-                Assert.IsTrue(boolCheck, "The method doesn't work");
-            }     
-        }
-
-        //to ensure the test works, set the wireList in the Piano class to public
-        //and comment out line 28 in the PianoWire class.
-        [TestMethod]
-        public void TestPlay()
-        {
-            Piano testObject = new Piano("q2we4r5op-[=fvgbnjmk", 44100);
-            string s = "q2we4r5op-[=fvgbnjmk";
-            bool boolCheck = true;
-            double sum = 0;
-
-            foreach (char c in s)
-            {
-                testObject.StrikeKey(c);
             }
+            Assert.AreNotEqual(null, chopsticksLines, "Expecting not null value but value was different");
+            Assert.AreNotEqual(null, chopsticksLines[0], "Expecting not null value but value was different");
+            Assert.AreNotEqual(null, myPiano, "Expecting not null value but value was different");
 
-            foreach (PianoWire pianoWire in testObject.wireList)
-            {
-                sum += pianoWire.Sample();
-            }
-
-            if (sum - testObject.Play() != 0)
-            {
-                boolCheck = false;
-            }
-
-            Assert.IsTrue(boolCheck);
         }
     }
 }

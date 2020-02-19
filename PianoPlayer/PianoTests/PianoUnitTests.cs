@@ -26,5 +26,16 @@ namespace PianoTests
             CollectionAssert.AreEqual(array, testArr.GetBuffer());
             Assert.IsTrue();
         }
+        [TestMethod]
+        public void PianoWireConstructorTest()
+        {
+            PianoWire pianoWire = new PianoWire(6, 2);
+            Assert.AreEqual(3, pianoWire.circularArray.Length, "Expected result of 3 but value was different");
+        }
+        [TestMethod]
+        public void PianoWireSampleTest()
+        {
+
+        }
     }
 }
