@@ -13,6 +13,7 @@ namespace PianoPlayer
 			this.samplingRate = samplingRate;
 			this.circularArray = new CircularArray(this.samplingRate / this.frequency);
 		}
+
 		/// <summary>
 		/// This method returns the value of the frequency field.
 		/// </summary>
@@ -44,10 +45,15 @@ namespace PianoPlayer
 		/// </summary>
 		/// <param name="decay">Factor</param>
 		/// <returns>First value in queue, between -0.5 and 0.5</returns>
-		public double Sample(double decay)
+		public double Sample(double decay = 0.996)
 		{
-			return this.circularArray.Shift((this.circularArray[0] + this.circularArray[1])/2 * decay);
+			double d1 = this.circularArray[0];
+			double d2 = this.circularArray[1];
+			double newVal = ((d1 + d2) / 2) * decay;
+			this.circularArray.Shift(newVal);
+			return d1;
 		}
+
 		/// <summary>
 		/// This method simulates striking the wire by replacing all of the values
 		/// in the ring buffer with random values from the range -0.5 to 0.5.

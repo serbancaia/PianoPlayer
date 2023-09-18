@@ -10,10 +10,10 @@ namespace PianoPlayer
 		private List<IMusicalInstrument> wireList = new List<IMusicalInstrument>();
 
 		/// <summary> 
-        /// This constructor takes 2 params to create a Piano object
-        /// </summary>
-        /// <param name="keys">String of keys</param>
-        /// <param name="samplingRate">Smpling rate value</param>
+		/// This constructor takes 2 params to create a Piano object and associates a char in the string with a note.
+		/// </summary>
+		/// <param name="keys">String of keys</param>
+		/// <param name="samplingRate">Smpling rate value</param>
 		public Piano(string keys = "q2we4r5ty7u8i9op-[=zxdcfvgbnjmk,.;/' ", int samplingRate = 44100)
 		{
 			this.keys = keys;
@@ -21,15 +21,19 @@ namespace PianoPlayer
 			CharacterKey();
 		}
 
+		public string GetKeys()
+		{
+			return this.keys;
+		}
 		/// <summary>
         /// This method associates a char in the keys string with a note and its frequency.
         /// </summary>
-		public void CharacterKey()
+		private void CharacterKey()
 		{	
 			foreach (char c in keys.ToCharArray())
 			{
 				Console.WriteLine(c);
-				wireList.Add(new PianoWire((int)(Math.Pow(2.0, ((double)(keys.IndexOf(c)) - 24.0) / 12.0) * 440.0), samplingRate));
+				wireList.Add(new PianoWire(Convert.ToInt32(Math.Round(Math.Pow(2.0, (keys.IndexOf(c) - 24.0) / 12.0) * 440.0,0.0)), samplingRate));
 			}
 		}
 
