@@ -12,7 +12,7 @@ namespace PianoPlayer
     {
         public static void Main(String[] args)
         {
-            String[] chopsticksLines = File.ReadAllLines("D:/Computer_Science/Dawson/Semester_4/Net_with_C#_II/great_assign1_folder/teamj/PianoProject/PianoPlayer/PianoPlayer/chopsticks.txt");
+            String[] chopsticksLines = File.ReadAllLines("../../chopsticks.txt");
             Audio player = new Audio();
             Piano myPiano = new Piano(chopsticksLines[0], 44100);
             foreach(String line in chopsticksLines)

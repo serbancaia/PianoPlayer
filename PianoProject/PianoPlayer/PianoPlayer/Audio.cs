@@ -43,7 +43,7 @@ namespace PianoPlayer
         /// <summary>
         /// Used to play a double representing an audio sample. The double will be added to the buffer
         /// </summary>
-        /// <param name="input">Smaple to be played</param>
+        /// <param name="input">Sample to be played</param>
         public void Play(double input)
         {
             // clip if outside [-1, +1]

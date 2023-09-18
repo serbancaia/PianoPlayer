@@ -29,7 +29,7 @@ namespace PianoPlayer
 			foreach (char c in keys.ToCharArray())
 			{
 				Console.WriteLine(c);
-				wireList.Add(new PianoWire((int)(Math.Pow(2, (keys.IndexOf(c) - 24) / 12) * 440), samplingRate));
+				wireList.Add(new PianoWire((int)(Math.Pow(2.0, ((double)(keys.IndexOf(c)) - 24.0) / 12.0) * 440.0), samplingRate));
 			}
 		}
 

@@ -11,3 +11,11 @@ D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\how_assign1_folder\teamj\Pi
 D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\how_assign1_folder\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.AssemblyInfo.cs
 D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\how_assign1_folder\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.dll
 D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\how_assign1_folder\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.pdb
+D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\great_assign1_folder\teamj\PianoPlayer\PianoPlayer\bin\Debug\netstandard2.0\PianoPlayer.deps.json
+D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\great_assign1_folder\teamj\PianoPlayer\PianoPlayer\bin\Debug\netstandard2.0\PianoPlayer.dll
+D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\great_assign1_folder\teamj\PianoPlayer\PianoPlayer\bin\Debug\netstandard2.0\PianoPlayer.pdb
+D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\great_assign1_folder\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.csprojAssemblyReference.cache
+D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\great_assign1_folder\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.AssemblyInfoInputs.cache
+D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\great_assign1_folder\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.AssemblyInfo.cs
+D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\great_assign1_folder\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.dll
+D:\Computer_Science\Dawson\Semester_4\Net_with_C#_II\great_assign1_folder\teamj\PianoPlayer\PianoPlayer\obj\Debug\netstandard2.0\PianoPlayer.pdb
